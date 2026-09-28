@@ -1,0 +1,50 @@
+{% load static %}
+
+<aside class="sidebar">
+
+    <div class="logo">
+        🪪 MUTRA.CHU.YO
+    </div>
+
+    <nav>
+
+        <!-- Tableau de bord -->
+        <a href="{% url 'core_index' %}" class="nav-link">
+            <i class="bi bi-speedometer2"></i>
+            <span>TABLEAU DE BORD</span>
+        </a>
+
+        <!-- Gestion des membres -->
+        <div class="menu-title">
+            GESTION DES MEMBRES
+        </div>
+
+        <a href="{% url 'liste_membres' %}" class="nav-link">
+            <i class="bi bi-people"></i>
+            <span>Membres</span>
+        </a>
+
+        <a href="{% url 'etape1' %}" class="nav-link">
+            <i class="bi bi-person-plus"></i>
+            <span>Nouvel enrôlement</span>
+        </a>
+
+        <!-- Ces deux rubriques seront reliées aux pages correspondantes -->
+        <a href="{% url 'liste_membres' %}" class="nav-link">
+            <i class="bi bi-person-hearts"></i>
+            <span>Conjoints</span>
+        </a>
+
+        <a href="{% url 'liste_membres' %}" class="nav-link">
+            <i class="bi bi-people"></i>
+            <span>Enfants</span>
+        </a>
+
+        <a href="{% url 'liste_cartes' %}" class="nav-link">
+            <i class="bi bi-credit-card-2-front"></i>
+            <span>Carte</span>
+        </a>
+
+    </nav>
+
+</aside>
