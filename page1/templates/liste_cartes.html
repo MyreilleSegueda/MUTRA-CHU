@@ -5,7 +5,7 @@
 
 {% block content %}
 
-<div class="w-full max-w-full">
+<div class="w-full min-w-0 flex-1">
 
     <!-- En-tête -->
     <div class="d-flex justify-content-between align-items-center mb-4">
@@ -116,12 +116,12 @@
 
 </div>
 <!-- Zone principale -->
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-6">
 
     <!-- ========================================= -->
     <!-- COLONNE GAUCHE : LISTE DES CARTES -->
     <!-- ========================================= -->
-    <div class="lg:col-span-2">
+    <div class="lg:col-span-2 min-w-0">
 
         <div class="bg-white-500 rounded-xl shadow-sm border border-gray-100 overflow-hidden">
 
@@ -363,7 +363,7 @@
     <!-- COLONNE DROITE : APERÇU -->
     <!-- ========================================= -->
     <div>
-
+        <div class="min-w-0">
         <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
 
             <!-- En-tête -->
